@@ -5,7 +5,7 @@ export default function Inicio() {
   return (
     <section>
       <h3>
-       Recomendações da cozinha     
+       Recomendações da cozinh    
       </h3>
       <div>
 
