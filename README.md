@@ -5,3 +5,7 @@ npm install normalize.css
  npm install react-icons
 
  npm install classnames
+
+ npm init @eslint/config
+
+ npx eslint ./src --fix
