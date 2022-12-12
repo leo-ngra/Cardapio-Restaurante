@@ -1,3 +1,4 @@
+
 import cardapio from 'data/cardapio.json';
 import styles from './Inicio.module.scss';
 
@@ -8,6 +9,8 @@ export default function Inicio() {
 
   return (
     <section>
+  
+
       <h3 className={styles.titulo}>
          Recomendações da cozinha    
       </h3>
