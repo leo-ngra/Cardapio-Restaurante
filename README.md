@@ -1,5 +1,12 @@
 ## Projeto Cardápio Restaurante
 
+# Tecnologias
+
+- React
+- React Router Dom
+- Typescript
+- Sass
+
 importando o normalize para resetar o css
 
 npm install normalize.css
