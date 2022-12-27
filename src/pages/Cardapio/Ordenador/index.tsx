@@ -1,16 +1,16 @@
-import { useState } from 'react';
+import classNames from 'classnames';
+import { memo, useState } from 'react';
 import { MdKeyboardArrowUp, MdKeyboardArrowDown } from 'react-icons/md';
 
-import styles from './Ordenador.module.scss';
 import opcoes from './opcoes.json';
-import classNames from 'classnames';
+import styles from './Ordenador.module.scss';
 
 interface Props {
     ordenador: string,
     setOrdenador: React.Dispatch<React.SetStateAction<string>>
 }
 
-export default function Ordenador({ ordenador, setOrdenador }: Props) {
+function Ordenador({ ordenador, setOrdenador }: Props) {
 
   const [aberto, setAberto] = useState(false);
   const nomeOrdenador = ordenador && opcoes.find(opcao => opcao.value === ordenador)?.nome;
@@ -43,3 +43,5 @@ export default function Ordenador({ ordenador, setOrdenador }: Props) {
     </button >
   );
 }
+
+export default memo(Ordenador);
